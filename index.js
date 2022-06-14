@@ -19,8 +19,7 @@ client.once('ready', () => {
 });
 
 client.on('messageCreate', async message => {
-	if (!client.application?.owner) await client.application?.fetch();
-	if (message.author.id !== client.application?.owner.id && (message.channelId === process.env.VERIFY_CHANNEL || message.channelId === process.env.CHECKPOINT_CHANNEL)) {
+	if (message.channelId === process.env.VERIFY_CHANNEL || message.channelId === process.env.CHECKPOINT_CHANNEL) {
 		message.delete();
 	}
 });
