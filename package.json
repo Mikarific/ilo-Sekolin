@@ -1,0 +1,23 @@
+{
+  "name": "ilo-sekolin",
+  "version": "1.0.0",
+  "description": "A discord bot to verify the identity of Pxls users and set their toki pona names.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mikarific",
+  "license": "MIT",
+  "dependencies": {
+    "@discordjs/builders": "^0.15.0",
+    "@discordjs/rest": "^0.5.0",
+    "axios": "^0.27.2",
+    "cheerio": "^1.0.0-rc.11",
+    "discord-api-types": "^0.34.0",
+    "discord.js": "^14.0.0-dev.1655165434-b4e28a8",
+    "dotenv": "^16.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.17.0"
+  }
+}
