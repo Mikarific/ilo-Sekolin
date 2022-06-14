@@ -73,7 +73,7 @@ module.exports = {
 						continue;
 					}
 					if (currentPhoneme.length === 2 && letters[j].match(/[nN]/)) {
-						if (letters[j + 1] && letters[j + 1].match(/[jklmnpstwJKLMNPSTW]/)) {
+						if ((letters[j + 1] && letters[j + 1].match(/[jklmnpstwJKLMNPSTW]/)) || !letters[j + 1]) {
 							currentPhoneme += letters[j];
 							phonemes.push(currentPhoneme);
 							currentPhoneme = '';
