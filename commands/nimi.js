@@ -146,7 +146,7 @@ module.exports = {
 
 				nimi[i] = syllables.join('').charAt(0).toUpperCase() + syllables.join('').toLowerCase().slice(1);
 				foriegnWordUsed = true;
-			} else if (foriegnWordUsed) {
+			} else if (foriegnWordUsed && !word) {
 				invalidName.push('foriegn word');
 				invalidName.push(i);
 				invalidName.push(nimi[i].toLowerCase());
